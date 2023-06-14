@@ -1,4 +1,4 @@
-package com.example.weatherapp.fragments
+package com.example.pixelweather.fragments
 
 data class Weather(
     val city: String,

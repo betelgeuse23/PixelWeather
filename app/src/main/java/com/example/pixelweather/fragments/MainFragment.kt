@@ -1,6 +1,6 @@
-package com.example.weatherapp.fragments
+package com.example.pixelweather.fragments
 
-import  android.Manifest
+import android.Manifest
 import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
@@ -21,8 +21,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
-import com.example.weatherapp.MainViewModel
-import com.example.weatherapp.databinding.FragmentMainBinding
+import com.example.pixelweather.MainViewModel
+import com.example.pixelweather.databinding.FragmentMainBinding
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
 import com.google.android.gms.location.Priority
@@ -156,7 +156,7 @@ class MainFragment : Fragment() {
 
     private fun getResult(city: String) {
         val url = "http://api.weatherapi.com/v1/forecast.json?" +
-                "key=049c9fb75a5943a2a6e83841221611&q=$city&days=7&aqi=no&alerts=no"
+                "key=76077424e0184f9b98f141321231406&q=$city&days=7&aqi=no&alerts=no"
         val inf = Volley.newRequestQueue(context)
         val ask = StringRequest(com.android.volley.Request.Method.GET, url, {
                 response -> parser(response)

@@ -1,8 +1,8 @@
-package com.example.weatherapp
+package com.example.pixelweather
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.weatherapp.fragments.Weather
+import com.example.pixelweather.fragments.Weather
 
 class MainViewModel : ViewModel() {
     val liveCur = MutableLiveData<Weather>()

@@ -1,4 +1,4 @@
-package com.example.weatherapp.fragments
+package com.example.pixelweather.fragments
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.weatherapp.R
+import com.example.pixelweather.R
 import com.squareup.picasso.Picasso
 
 class WeatherAdapter2(private val inf: List<Weather>) : RecyclerView.Adapter<WeatherAdapter2.MyViewHolder>() {
